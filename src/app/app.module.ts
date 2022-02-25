@@ -42,6 +42,11 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatStepperModule } from '@angular/material/stepper';
 import { StepperComponent } from './stepper/stepper.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -85,7 +90,11 @@ import { StepperComponent } from './stepper/stepper.component';
     MatSlideToggleModule,
     MatSnackBarModule,
     MatTableModule,
-    MatStepperModule
+    MatStepperModule,
+    MatDividerModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    MatSidenavModule
   ],
   providers: [
     { provide: MatBottomSheetRef, useValue: {} },
