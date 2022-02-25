@@ -1,5 +1,14 @@
 <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
 <br><br>
+<mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1000"
+  step="1000"
+  min="0"
+  max="100000"
+  aria-label="units"></mat-slider>
+<br><br>
 <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Number</mat-label>
@@ -19,5 +28,8 @@
 <app-material></app-material><br><br>
 <app-checkbox></app-checkbox><br><br>
 <app-chips1></app-chips1><br><br>
-<app-chips2></app-chips2>
+<app-chips2></app-chips2><br><br>
+<app-form-field></app-form-field><br><br>
+<app-snackbar></app-snackbar><br><br>
+<app-stepper></app-stepper>
 

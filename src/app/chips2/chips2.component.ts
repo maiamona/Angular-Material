@@ -12,6 +12,7 @@ export class Chips2Component implements OnInit {
   animal: string;
   name: string;
 hide:boolean;
+panelOpenState = false;
   constructor(public dialog: MatDialog, public dialogRef: MatDialogRef<Chips2Component>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
 

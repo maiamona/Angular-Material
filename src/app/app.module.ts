@@ -29,6 +29,19 @@ import { MatChipsModule } from '@angular/material/chips';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
+import { MatExpansionModule } from '@angular/material/expansion';
+import { FormFieldComponent } from './form-field/form-field.component';
+import { MatRadioModule } from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { SnackbarComponent } from './snackbar/snackbar.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatStepperModule } from '@angular/material/stepper';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +49,10 @@ import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
     MaterialComponent,
     CheckboxComponent,
     Chips1Component,
-    Chips2Component
+    Chips2Component,
+    FormFieldComponent,
+    SnackbarComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +75,17 @@ import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
     MatCheckboxModule,
     MatChipsModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatExpansionModule,
+    MatRadioModule,
+    MatSelectModule,
+    MatMenuModule,
+    MatPaginatorModule,
+    MatProgressSpinnerModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatStepperModule
   ],
   providers: [
     { provide: MatBottomSheetRef, useValue: {} },
